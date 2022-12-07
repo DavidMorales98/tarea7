@@ -1,0 +1,163 @@
+@import url('https://fonts.cdnfonts.com/css/shlop');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Shlop', sans-serif;
+}
+
+body {
+    background-image: url("https://img5.goodfon.com/wallpaper/nbig/3/8e/rick-and-morty-planeta-morgenshtern-korabl.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    height: auto;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#NaveRickyMorty{
+position: absolute;
+z-index: 999;
+height: auto;
+width: 150px;
+
+transition: all 0.8s ease-in;
+-webkit-transition: all 0.5s ease-in; /** Chrome & Safari **/
+-moz-transition: all 0.5s ease-in; /** Firefox **/
+-o-transition: all 0.5s ease-in; /** Opera **/
+
+}
+
+.pistol-zone{
+    display: flex;
+    align-items: center;
+
+}
+button{
+    height: 100px;
+    width: 300px;
+    background-color: transparent;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+    border: 0;
+
+}
+#PistolaPortales{
+    height: 100%;
+    width: 100%;
+}
+.item-container {
+    height: auto;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #030303;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    margin: 80px 40px;
+    overflow: hidden;
+}
+
+.card .imagenes-card{
+    position: absolute;
+    top:0;
+    bottom:0;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.card .fondo-card1{
+    position: relative;
+    object-fit: cover !important;
+    height: 100% !important;
+    width: 100% !important;
+    overflow: hidden;
+}
+.img-card{
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 30%;
+    left: 30%;
+    box-shadow: 0 5px 20px greenyellow;
+    transition: 0.3s ease-in-out;
+    visibility: visible;
+    opacity: 0;
+}
+
+.texto-card {
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    color: black;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: greenyellow;
+    visibility: visible;
+    opacity: 0;
+}
+
+.card:hover .img-card {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.4s 0.3s;
+}
+
+.card:hover .texto-card {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.4s 0.3s;
+}
+
+footer {
+    bottom: 0;
+    height: 1%;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    height: 100px;
+    width: auto;
+    float: right;
+}
